@@ -1,0 +1,346 @@
+body, h1{
+    margin: 0px;
+    background: #e5e5e5;
+}
+button{
+    
+    background-color:#013440;
+    border-radius: 5px;
+    /* border: none; */
+    width: 50px;
+    
+    
+}
+h2{
+    margin: 0px;
+}
+
+nav{
+    background: black;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: none;
+
+}
+
+.icons{
+    margin: 15px;
+}
+.sacola{
+    background: #fff;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: 52px;
+    top: 15px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navegaçao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+}
+.retangulo{
+    width:74px;
+    height: 5px;
+    border-bottom: 5px solid; 
+    border-color: #f24e29;
+}
+.produtosTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    background: #fff;
+    border: 1px solid #0d0d0d;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+    width: 350px;
+    height: 100px;
+}
+
+.foto{
+    background: #c4c4c4;
+    border-radius: 5px;
+    position: relative;
+    width: 65px;
+    height: 60px;
+    left: 24px;
+    top: 15px;
+}
+
+.sacolaSeleçao{
+    display: flex;
+    background: #013440;
+    border-radius: 5px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 300px;
+    top: -35px;
+}
+
+.descriçao{
+    position: relative;
+    width: 250px;
+    height: 14px;
+    left: 90px;
+    top: -130px;
+}
+
+.retangulo2{
+    width:47px;
+    height: 5px;
+    border-bottom: 5px solid; 
+    border-color: #f24e29;
+}
+.sobreSite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textoSobre{
+    width: 261px;
+    height: 105px;
+    text-align: center;
+       
+}
+.fotoPrincipal{
+    display: none;
+}
+
+footer{
+    background: #0d0d0d;
+    position: absolute;
+    width: 100%;
+    height: 86px;
+    top: 755px;
+}
+h2{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.fotoProduto{
+    
+   
+    
+    width: 90px;
+    height: 90px;
+    /* left: 24px;
+    top: 5px; */
+    margin-top: 1px;
+    /* margin-left: -25px; */
+    
+}
+    
+--------
+
+
+
+
+#btnMenu {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.5s;
+    
+    
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .teste {  
+      flex-direction: row;
+      justify-content: space-around;
+}
+  
+    .container {
+      width: 280px;
+      height: 185px;
+}
+    .foto{
+    border-radius: 0;
+    width: 201px;
+    height: 100px;
+    left: 1px;
+    top: 0px;
+}
+.fotoProduto{
+    
+    width: 95px;
+    height: 95px;
+    /* margin-top: -5px; */
+    margin-left: 80px;
+    margin-bottom: 10px;
+    
+}
+/* .foto2{
+    margin-top: 10px;
+} */
+    .sacolaSeleçao{
+    width: 30px;
+    height: 30px;
+    left: 220px;
+    top: 35px;
+}
+    .descriçao{
+    /* width: 184px;
+    height: 31px; */
+    left: 15px;
+    top: -60px;
+}
+    .sobreSite{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+    .fotoPrincipal{
+    display: flex;
+    width: 556px;
+    height: 154px;
+    margin-left: 50px;
+    
+    
+}
+    .textoSobre{
+    width: 450px;
+    
+}
+
+}
+  
+  @media screen and (min-width: 1280px) {   
+    .container {
+        width: 402px;
+        height: 279px;
+  }
+      .foto{
+      border-radius: 0;
+      width: 400px;
+      height: 170px;
+      left: 1px;
+      top: 0px;
+  }
+  .fotoProduto{
+    
+    width: 200px;
+    height: 200px;
+    /* margin-top: -5px; */
+    margin-left: 1px;
+    /* margin-bottom: 10px; */
+    
+}
+  .sacolaSeleçao{
+    width: 50px;
+    height: 50px;
+    left: 320px;
+    top: 5px;
+}
+    .descriçao{
+    width: 184px;
+    height: 31px;
+    left: 180px;
+    top: -250px;
+    /* text-align: center; */
+    font-size: 22px;
+}
+    .sobreSite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+    .fotoPrincipal{
+    
+    width: 756px;
+    height: 154px;
+    margin-left: 0px;
+  
+}
+    .textoSobre{
+    position: relative;
+    text-align: left;
+    left: -50px;
+    width: 450px;
+    height: 105px;
+    font-size: 21px;
+    
+    
+}
+
+
+
+
+    footer{
+    background: #0d0d0d;
+    position: relative;
+    top: 100%;
+}
+
+h2{
+    padding: 25px;
+
+}
+
+#btnMenu{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin-left: 755px;
+    
+    
+}
+
+.aa, li, a{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    gap: 15px;
+    
+}
+
+
+
+
+
+
+
+
+
