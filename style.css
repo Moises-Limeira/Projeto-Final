@@ -2,15 +2,22 @@ body, h1{
     margin: 0px;
     background: #e5e5e5;
 }
+
 button{
     
     background-color:#013440;
     border-radius: 5px;
-    /* border: none; */
-    width: 50px;
-    
-    
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: -5px;
+    left: 300px;
+    top: -40px;
+   
 }
+    
+    
+
 h2{
     margin: 0px;
 }
@@ -89,23 +96,14 @@ nav{
     top: 15px;
 }
 
-.sacolaSeleçao{
-    display: flex;
-    background: #013440;
-    border-radius: 5px;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    left: 300px;
-    top: -35px;
-}
+
 
 .descriçao{
     position: relative;
     width: 250px;
     height: 14px;
     left: 90px;
-    top: -130px;
+    top: -140px;
 }
 
 .retangulo2{
@@ -147,32 +145,69 @@ h2{
 }
 
 .fotoProduto{
-    
-   
-    
     width: 90px;
     height: 90px;
-    /* left: 24px;
-    top: 5px; */
     margin-top: 1px;
-    /* margin-left: -25px; */
-    
 }
     
---------
-
-
-
 
 #btnMenu {
     cursor: pointer;
     padding: 5px;
     transition: all 0.5s;
-    
-    
+      
 }
 
+input{
+    display: none;
+}
 
+#toggle-1{
+    display:none;
+ }
+ 
+ label { 
+   display: inline-block;
+   cursor: pointer;
+   padding: 5px;
+ }
+ 
+ #mostra {
+    display:none; 
+ }
+ 
+ #toggle-1:checked ~ #mostra {
+    display:block;
+     
+ }
+ 
+ .menu{
+     background: rgb(157, 155, 155);
+     position: absolute;
+     width: 90px;
+     height: 90px;
+     left: 285px;
+     top: 74px;
+     border-radius: 5px;
+     gap: 105px;
+       
+ }
+ .infor, li, a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+    padding: 0px;
+    gap: 15px;
+
+}
+a{
+    border-bottom: 1px solid #000000;
+}
+ 
 
 @media screen and (min-width: 900px) {
     .teste {  
@@ -195,23 +230,21 @@ h2{
     
     width: 95px;
     height: 95px;
-    /* margin-top: -5px; */
     margin-left: 80px;
     margin-bottom: 10px;
     
 }
-/* .foto2{
-    margin-top: 10px;
-} */
-    .sacolaSeleçao{
-    width: 30px;
+
+
+button{
+    width: 60px;
     height: 30px;
-    left: 220px;
-    top: 35px;
+    left: 200px;
+    top: 40px;
 }
+    
     .descriçao{
-    /* width: 184px;
-    height: 31px; */
+    
     left: 15px;
     top: -60px;
 }
@@ -234,10 +267,15 @@ h2{
     width: 450px;
     
 }
+ .menu{
+    left: 810px;
+    top: 75px; 
+}
 
 }
   
-  @media screen and (min-width: 1280px) {   
+  @media screen and (min-width: 1280px) {
+
     .container {
         width: 402px;
         height: 279px;
@@ -253,23 +291,21 @@ h2{
     
     width: 200px;
     height: 200px;
-    /* margin-top: -5px; */
     margin-left: 1px;
-    /* margin-bottom: 10px; */
-    
+  
 }
-  .sacolaSeleçao{
-    width: 50px;
+button{
+    width: 60px;
     height: 50px;
     left: 320px;
-    top: 5px;
+    top: 2px;
 }
+
     .descriçao{
     width: 184px;
     height: 31px;
     left: 180px;
     top: -250px;
-    /* text-align: center; */
     font-size: 22px;
 }
     .sobreSite{
@@ -280,7 +316,6 @@ h2{
     
 }
     .fotoPrincipal{
-    
     width: 756px;
     height: 154px;
     margin-left: 0px;
@@ -297,9 +332,6 @@ h2{
     
 }
 
-
-
-
     footer{
     background: #0d0d0d;
     position: relative;
@@ -315,32 +347,29 @@ h2{
     display: none;
 }
 
+#mostra {
+    display: flex;
+ }
+
 .menu{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    margin-left: 755px;
-    
-    
-}
-
-.aa, li, a{
-    display: flex;
-    list-style: none;
-    color: white;
-    font-size: 19px;
-    text-decoration: none;
-    gap: 15px;
+    background: none;
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    left: 980px;
+    top: 10px;
     
 }
+.infor, li, a{
+   display: inline-block;
+   color: white;
+   font-size: 25px;
+   margin: 5px;
 
 
+}
+a{
+   border-bottom: none;
+}
 
-
-
-
-
-
-
+}
